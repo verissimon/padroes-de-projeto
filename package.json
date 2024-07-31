@@ -1,6 +1,20 @@
 {
+  "scripts": {
+    "start:chain": "ts-node PadraoChainOfResponsability/index.ts",
+    "start:command": "ts-node PadraoCommand/index.ts",
+    "start:observer": "ts-node PadraoObserver/index.ts",
+    "start:state": "ts-node PadraoState/index.ts",
+    "start:strategy": "ts-node PadraoStrategy/index.ts",
+    "start:template": "ts-node PadraoTemplateMethod/index.ts",
+    "start:visitor": "ts-node visitor/index.ts"
+  },
   "devDependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
+    "redux": "^5.0.1",
+    "rxjs": "^7.8.1"
   }
 }
