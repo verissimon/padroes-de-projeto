@@ -1,0 +1,14 @@
+{
+  "name": "book-club-management",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.0",
+    "redux": "^4.1.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.3.5"
+  }
+}
