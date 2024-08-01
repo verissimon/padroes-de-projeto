@@ -7,6 +7,8 @@ interface ShapeVisitor {
 }
 
 class ShapeLogger implements ShapeVisitor {
+  // várias versões do algoritmo, cada uma recebendo 
+  // como parâmetro os objetos concretos Shape
   visitCircle(circle: Circle) {
     console.log(
       `Logging circle with radius ${circle.radius}`

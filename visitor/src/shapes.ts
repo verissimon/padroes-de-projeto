@@ -3,11 +3,13 @@ import { ShapeVisitor } from "./shape-visitors"
 interface Shape {
   accept(visitor: ShapeVisitor): void
 }
-
+// classes cujo comportamento queremos extender
 class Circle implements Shape {
   constructor(public radius: number) {}
 
   accept(visitor: ShapeVisitor): void {
+    // a classe concreta aceita o visitante e é
+    // quem decide qual método executar
     visitor.visitCircle(this)
   }
 }
