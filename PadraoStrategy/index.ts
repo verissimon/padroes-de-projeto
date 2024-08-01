@@ -6,15 +6,15 @@ import { TransferenciaBancaria } from './src/TransferenciaBancaria';
 const valorCompra = 500.00;
 console.log(`Valor total da compra: R$ ${valorCompra} \n`)
 
-const contextoPagamento = new GerenciadorDePagamentos(new CartaoCredito());
+const gerenciadorPagamento = new GerenciadorDePagamentos(new CartaoCredito());
 
-const valorFinalCartao = contextoPagamento.processar(valorCompra); // Inclui juros
+const valorFinalCartao = gerenciadorPagamento.processar(valorCompra); // Inclui juros
 console.log(`Pagamento com Cartão de credito efetuado com sucesso, o valor final de sua compra foi: R$${valorFinalCartao.toFixed(2)}\n`);
 
-contextoPagamento.setPagamento(new Pix());
-const valorFinalPix = contextoPagamento.processar(valorCompra); // Sem alteração
+gerenciadorPagamento.setPagamento(new Pix());
+const valorFinalPix = gerenciadorPagamento.processar(valorCompra); // Sem alteração
 console.log(`Pagamento com Pix efetuado com sucesso, o valor final de sua compra foi: R$${valorFinalPix.toFixed(2)}\n`);
 
-contextoPagamento.setPagamento(new TransferenciaBancaria());
-const valorFinalTransferencia = contextoPagamento.processar(valorCompra); // Inclui desconto
+gerenciadorPagamento.setPagamento(new TransferenciaBancaria());
+const valorFinalTransferencia = gerenciadorPagamento.processar(valorCompra); // Inclui desconto
 console.log(`Pagamento com Transferência Bancária efetuado com sucesso, o valor final de sua compra foi: R$${valorFinalTransferencia.toFixed(2)}\n`);
