@@ -6,7 +6,9 @@
     "start:state": "ts-node comportamentais/PadraoState/index.ts",
     "start:strategy": "ts-node comportamentais/PadraoStrategy/index.ts",
     "start:template": "ts-node comportamentais/PadraoTemplateMethod/index.ts",
-    "start:visitor": "ts-node comportamentais/visitor/index.ts"
+    "start:visitor": "ts-node comportamentais/visitor/index.ts",
+    "start:factory-m": "ts-node criacionais/factory/index.ts",
+    "start:builder": "ts-node criacionais/Builder/index.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
