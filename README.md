@@ -1,3 +1,3 @@
-# Behavioral-Patterns
+# Padrões de Projeto
 
-Repositório com exemplos de códigos para a apresentação do seminário de Padrões comportamentais utilizando a linguagem typescript.
+Repositório com exemplos de códigos para a apresentação dos seminários de Padrões de projeto utilizando a linguagem typescript.
