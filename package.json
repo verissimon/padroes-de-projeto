@@ -10,6 +10,7 @@
     "start:factory-m": "ts-node criacionais/factory/index.ts",
     "start:builder": "ts-node criacionais/Builder/index.ts",
     "start:abs-factory": "ts-node criacionais/abs-factory/index.ts",
+    "start:facade": "ts-node estruturais/facade/index.ts",
     "start:adapter": "ts-node estruturais/adapter/index.ts"
   },
   "devDependencies": {
